@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    background-color: rgb(39, 39, 39);;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.cuadroseparador {
+    font-size: 1.5em;
+    padding: 1% 1%;
+    border: 2px solid #000000;
+    font-weight: bold;
+    margin: 2% 35%;
+    background-color: rgb(255, 255, 255) ;
+    border-radius: 30px;
+}
+
+#contenedorheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 1px 2px 10px 1px rgba(255, 255, 255, 0); 
+}
+
+#contenedorlogo {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    padding: 2%;
+}
+
+#CakesOps {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    background: linear-gradient(rgb(255, 255, 255), rgb(244, 230, 147), rgb(254, 219, 16),rgb(118, 101, 2));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#navsup ul {
+    list-style: none;
+    display: flex;
+    gap: 4%;
+}
+
+#navsup ul li {
+    box-shadow: 1px 2px 10px 1px rgba(20,20,20,0.4);
+    border-radius: 20px;
+    background-color: rgb(28, 28, 28);
+    border: 3px double rgb(0, 0, 0);
+    padding: 4% 10%;
+}
+
+#navsup ul :hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 64, 64);
+}
+
+#navsup a {
+    font-weight: bold;
+    color: rgb(230, 230, 230);
+}
+
+#navredessup {
+    margin-right: 1%;
+}
+
+#navredessup a {
+    color: white;
+}
+
+#navredessup a :hover {
+    color: rgb(255, 227, 85)
+}
+
+#Inicio {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.contenedorcarruselgrande {
+    border: 3px solid black;
+    width: 99%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.contenedorcarruselgrande ul{
+    display: flex;
+    animation: slide 20s linear infinite ;
+    width: 300%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    25% {margin-left: 0%;}
+
+    30% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+.contenedorcarruselgrande li{
+    list-style: none;
+    width: 100%;
+    height: 650px;
+}
+
+.contenedorcarruselgrande img {
+    height: 100%;
+    width: 100%;
+}
+
+#Productos {
+    background-color: white;
+}
+
+.contenedorproductos {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    gap: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.textoproductos {
+    background-color: rgb(39, 39, 39);
+    border: 3px double rgb(254, 219, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 10px 6px rgba(20,20,20,0.4);
+    border-radius: 20px;
+    color: rgb(210, 210, 210);
+    font-weight: bold;
+    
+}
+
+.imagenesproductos {
+    background-color: rgb(39, 39, 39);
+    border: 3px double rgb(254, 219, 16);
+    overflow: hidden;
+    box-shadow: 1px 2px 10px 6px rgba(20,20,20,0.4);
+    border-radius: 20px;
+}
+
+.imagenesproductos ul {
+    display: flex;
+    animation: slideproducts 10s linear infinite ;
+    width: 300%;
+}
+
+@keyframes slideproducts {
+    0% {margin-left: 0%;}
+    25% {margin-left: 0%;}
+
+    30% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+.imagenesproductos li {
+    list-style: none;
+    width: 100%;
+    height: 250px;
+}
+
+.imagenesproductos img {
+    height: 100%;
+    width: 100%;
+}
+
+#Contacto {
+    background-color: white;
+}
+
+#formulario {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border: rgb(255, 227, 85) solid 2px;
+    border-radius: 30px;
+    box-shadow: 1px 2px 10px 6px rgba(20,20,20,0.4);
+    font-weight: bold;
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+#botonenviar {
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(255, 227, 85));
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 2% 15%;
+    border: 2px solid #000000;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(0, 0, 0);
+    cursor:pointer;
+    font-weight: bold;
+}
+
+#botonenviar:hover {
+    color: rgb(63, 63, 63);
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(255, 246, 145));
+
+}
+
+footer {
+    background-color: rgb(39, 39, 39);
+    box-shadow: 1px 2px 10px 5px rgba(20,20,20,0.4);
+    color:rgb(254, 219, 16);
+}
+
+#navredesinf a{
+    color: rgb(254, 219, 16)
+}
+
+#navredesinf a :hover {
+    color: rgb(255, 255, 255)
+}
+
+#irarriba:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/*celular*/
+@media screen and (max-width: 700px) {
+    #navredessup {display: none;}
+    #navsup ul {flex-direction: column;}
+    #contenedorheader {flex-direction: column; position:absolute;}
+    .contenedorproductos {grid-template-columns: 1fr 1fr;}
+    #formulario {min-width: 200px;} 
+}
+
+/*tablet*/
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    #navredessup {display: none;}
+    #formulario {min-width: 300px;} 
+    #contenedorheader {justify-content:start; position:absolute;}
+}
+  
+/*pc*/
+@media screen and (min-width: 1000px) {
+
+}
