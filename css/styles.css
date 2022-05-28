@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    background-color: rgb(39, 39, 39);;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.cuadroseparador {
+    font-size: 18px;
+    padding: 10px 10px;
+    border: 2px solid #000000;
+    font-weight: bold;
+    margin: 18px 450px;
+    background-color: rgb(255, 255, 255) ;
+    border-radius: 30px;
+}
+
+#contenedorheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 1px 2px 10px 1px rgba(255, 255, 255, 0); 
+}
+
+#CakesOps {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin-left: -220px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(250, 241, 191) ,rgb(254, 219, 16), rgb(134, 115, 3));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#logo {
+    padding: 10px;
+}
+
+#navsup ul {
+    list-style: none;
+}
+
+#navsup ul li {
+    display: inline-block;
+    box-shadow: 1px 2px 10px 1px rgba(20,20,20,0.4);
+    border-radius: 20px;
+    background-color: rgb(28, 28, 28);
+    border: 3px double rgb(0, 0, 0);
+}
+
+#navsup a {
+    padding: 10px 30px;
+    font-weight: bold;
+    display: inline-block;
+    color: rgb(230, 230, 230);
+}
+
+#navsup ul li :hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 64, 64);
+    border-radius: 20px;
+}
+
+#navredessup {
+    margin-right: 20px;
+}
+
+#navredessup a {
+    color: white;
+}
+
+#navredessup a :hover {
+    color: rgb(255, 227, 85)
+}
+
+#Bienvenidos {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.contenedorcarrusel {
+    margin: 2px;
+    border: 3px solid black;
+    width: 99%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.contenedorcarrusel ul{
+    display: flex;
+    animation: slide 20s linear infinite ;
+    width: 300%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    25% {margin-left: 0%;}
+
+    30% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+.contenedorcarrusel li{
+    list-style: none;
+    width: 100%;
+    height: 650px;
+}
+
+.contenedorcarrusel img {
+    height: 100%;
+    width: 100%;
+}
+
+#Productos {
+    background-color: white;
+    padding: 20px;
+}
+
+.contenedorproductos {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    gap: 5px;
+    margin: 10px 100px;
+}
+
+.textoproductos {
+    background-color: rgb(39, 39, 39);
+    border: 3px double rgb(254, 219, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 10px 6px rgba(20,20,20,0.4);
+    border-radius: 20px;
+    color: rgb(210, 210, 210);
+    font-weight: bold;
+    
+}
+
+.imagenesproductos {
+    background-color: rgb(39, 39, 39);
+    border: 3px double rgb(254, 219, 16);
+    overflow: hidden;
+    box-shadow: 1px 2px 10px 6px rgba(20,20,20,0.4);
+    border-radius: 20px;
+}
+
+.imagenesproductos ul {
+    display: flex;
+    animation: slideproducts 10s linear infinite ;
+    width: 300%;
+}
+
+@keyframes slideproducts {
+    0% {margin-left: 0%;}
+    25% {margin-left: 0%;}
+
+    30% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+.imagenesproductos li {
+    list-style: none;
+    width: 100%;
+    height: 200px;
+}
+
+.imagenesproductos img {
+    height: 100%;
+    width: 100%;
+}
+
+#Sucursales {
+    padding: 20px; 
+}
+
+#Mapa {
+    margin-left: -15px;
+
+}
+
+#Contacto {
+    background-color: white;
+    padding: 20px;
+}
+
+#formulario {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    margin: 0px 400px;
+    border: rgb(255, 227, 85) solid 2px;
+    border-radius: 30px;
+    box-shadow: 1px 2px 10px 6px rgba(20,20,20,0.4);
+    font-weight: bold;
+
+}
+
+#botonenviar {
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(255, 227, 85));
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 10px 60px;
+    border: 2px solid #000000;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(0, 0, 0);
+    cursor:pointer;
+    font-weight: bold;
+}
+
+#botonenviar:hover {
+    color: rgb(63, 63, 63);
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(255, 246, 145));
+
+}
+
+footer {
+    background-color: rgb(39, 39, 39);
+    box-shadow: 1px 2px 10px 5px rgba(20,20,20,0.4);
+    color:rgb(254, 219, 16);
+    margin-bottom: 5px;
+}
+
+#navredesinf a{
+    color: rgb(254, 219, 16)
+}
+
+#navredesinf a :hover {
+    color: rgb(255, 255, 255)
+}
+
+#irarriba:hover {
+    color: rgb(255, 255, 255);
+}
